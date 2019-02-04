@@ -33,7 +33,7 @@ extern DXTEXTURE DxTex[TEXTURE_MAX];
 
 // 関数 //
 FBOOL TexInit(void);							// 最適なテクスチャフォーマットを検索する
-FBOOL TexCreateTexture(char *name,DWORD txid);	// テクスチャをロードする
+//FBOOL TexCreateTexture(char *name,DWORD txid);	// テクスチャをロードする
 FVOID TexReleaseTexture(DWORD txid);			// テクスチャを解放する
 FVOID TexSetTexture(DWORD txid);				// テクスチャハンドルをセットする
 

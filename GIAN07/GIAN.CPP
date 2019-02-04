@@ -229,7 +229,7 @@ extern FVOID StdStatusOutput(void)
 	static DWORD	fps,count;
 	static DWORD	time,temp;
 	//extern InputConfig			IConfig;
-	char	*DItem[4] = {"Easy","Norm","Hard","Luna"};
+	const char	*DItem[4] = {"Easy","Norm","Hard","Luna"};
 	char	buf[100];
 
 //	if(!DebugDat.MsgDisplay) return;

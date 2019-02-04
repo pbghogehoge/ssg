@@ -11,7 +11,7 @@
 
 
 
-char *ScoreFileName = "秋霜SC.DAT";				// スコアデータ格納ファイル名
+const char *ScoreFileName = "秋霜SC.DAT";				// スコアデータ格納ファイル名
 NR_SCORE_STRING		ScoreString[NR_RANK_MAX];	// スコアデータ文字列格納先
 
 BYTE ExtraFlags = 0;

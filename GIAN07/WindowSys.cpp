@@ -341,7 +341,7 @@ void MWinDraw(void)
 }
 
 // メッセージ文字列を送る //
-void MWinMsg(char *s)
+void MWinMsg(const char *s)
 {
 	int			Line,i;
 

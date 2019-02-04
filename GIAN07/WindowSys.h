@@ -68,8 +68,8 @@
 
 // 子ウィンドウの情報 //
 typedef struct tagWINDOW_INFO{
-	char			*Title;			// タイトル文字列へのポインタ(実体ではない！)
-	char			*Help;			// ヘルプ文字列へのポインタ(これも実体ではない)
+	const char			*Title;			// タイトル文字列へのポインタ(実体ではない！)
+	const char			*Help;			// ヘルプ文字列へのポインタ(これも実体ではない)
 
 	BOOL			(*CallBackFn)(WORD);	// 特殊処理用コールバック関数(未使用ならNULL)
 	BYTE			NumItems;				// 項目数(<ITEM_MAX)
@@ -106,7 +106,7 @@ typedef struct tagMSG_WINDOW{
 	BYTE		FaceState;			// 顔の状態
 	BYTE		FaceTime;			// 顔表示用カウンタ
 
-	char		*Msg[MSG_HEIGHT];	// 表示するメッセージへのポインタ
+	const char		*Msg[MSG_HEIGHT];	// 表示するメッセージへのポインタ
 
 	//char		MsgBuf[MSG_HEIGHT][MESSAGE_MAX];	// メッセージ格納配列の実体
 } MSG_WINDOW;
@@ -140,7 +140,7 @@ void MWinForceClose(void);		// メッセージウィンドウを強制クロー�
 void MWinMove(void);			// メッセージウィンドウを動作させる(後で上と統合する)
 void MWinDraw(void);			// メッセージウィンドウを描画する(上に同じ)
 
-void MWinMsg(char *s);			// メッセージ文字列を送る
+void MWinMsg(const char *s);			// メッセージ文字列を送る
 void MWinFace(BYTE faceID);		// 顔をセットする
 void MWinCmd(BYTE cmd);			// コマンドを送る
 

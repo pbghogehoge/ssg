@@ -46,7 +46,7 @@ typedef struct tagExtraFontInfo {
 
 
 ///// [ 関数 ] /////
-extern FVOID GrpPut16(int x,int y,char *s);		// 16x16 透過フォントで文字列出力(高速)
+extern FVOID GrpPut16(int x,int y,const char *s);		// 16x16 透過フォントで文字列出力(高速)
 extern FVOID GrpPut16c(int x,int y,char *s);	// 16x16 透過フォントで文字列出力(ｸﾘｯﾋﾟﾝｸﾞ有)
 extern FVOID GrpPut16c2(int x,int y,char *s);	// 上と同じだが、ｘ移動幅が１６
 extern FVOID GrpPutc(int x,int y,char c);		// 16x16 透過フォントで文字出力(ｸﾘｯﾋﾟﾝｸﾞ有)

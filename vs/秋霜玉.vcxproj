@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{DD948C1B-D49E-44C9-943A-7DEC8050B1D4}</ProjectGuid>
+    <RootNamespace>秋霜玉</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>DIRECTDRAW_VERSION=0x0700;DIRECTSOUND_VERSION=0x0700;DIRECTINPUT_VERSION=0x0700;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\DirectXUTYs;..\patch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>../patch;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>DIRECTDRAW_VERSION=0x0700;DIRECTSOUND_VERSION=0x0700;DIRECTINPUT_VERSION=0x0700;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\DirectXUTYs;..\patch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>../patch;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>DIRECTDRAW_VERSION=0x0700;DIRECTSOUND_VERSION=0x0700;DIRECTINPUT_VERSION=0x0700;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\DirectXUTYs;..\patch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../patch;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>DIRECTDRAW_VERSION=0x0700;DIRECTSOUND_VERSION=0x0700;DIRECTINPUT_VERSION=0x0700;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\DirectXUTYs;..\patch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../patch;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\DirectXUTYs\D2_Polygon.CPP" />
+    <ClCompile Include="..\DirectXUTYs\D3_TEX.CPP" />
+    <ClCompile Include="..\DirectXUTYs\DD_CLIP2D.CPP" />
+    <ClCompile Include="..\DirectXUTYs\DD_GRP2D.CPP" />
+    <ClCompile Include="..\DirectXUTYs\DD_GRP3D.CPP" />
+    <ClCompile Include="..\DirectXUTYs\DD_UTY.CPP" />
+    <ClCompile Include="..\DirectXUTYs\DI_UTY.CPP" />
+    <ClCompile Include="..\DirectXUTYs\DS_UTY.CPP" />
+    <ClCompile Include="..\DirectXUTYs\DX_ERROR.C" />
+    <ClCompile Include="..\DirectXUTYs\PBGMIDI.C" />
+    <ClCompile Include="..\DirectXUTYs\UT_MATH.C" />
+    <ClCompile Include="..\GIAN07\BOMBEFC.CPP" />
+    <ClCompile Include="..\GIAN07\BOSS.CPP" />
+    <ClCompile Include="..\GIAN07\DEMOPLAY.CPP" />
+    <ClCompile Include="..\GIAN07\EFFECT.CPP" />
+    <ClCompile Include="..\GIAN07\EFFECT3D.CPP" />
+    <ClCompile Include="..\GIAN07\ENDING.CPP" />
+    <ClCompile Include="..\GIAN07\ENEMY.CPP" />
+    <ClCompile Include="..\GIAN07\EnemyExCtrl.cpp" />
+    <ClCompile Include="..\GIAN07\FONTUTY.CPP" />
+    <ClCompile Include="..\GIAN07\FRAGMENT.CPP" />
+    <ClCompile Include="..\GIAN07\GAMEMAIN.CPP" />
+    <ClCompile Include="..\GIAN07\GIAN.CPP" />
+    <ClCompile Include="..\GIAN07\HOMINGL.CPP" />
+    <ClCompile Include="..\GIAN07\ITEM.CPP" />
+    <ClCompile Include="..\GIAN07\LASER.CPP" />
+    <ClCompile Include="..\GIAN07\LENS.CPP" />
+    <ClCompile Include="..\GIAN07\LLASER.CPP" />
+    <ClCompile Include="..\GIAN07\LOADER.CPP" />
+    <ClCompile Include="..\GIAN07\MAID.CPP" />
+    <ClCompile Include="..\GIAN07\MAIDTAMA.CPP" />
+    <ClCompile Include="..\GIAN07\PaletteEX.cpp" />
+    <ClCompile Include="..\GIAN07\PRankCtrl.cpp" />
+    <ClCompile Include="..\GIAN07\SCORE.CPP" />
+    <ClCompile Include="..\GIAN07\SCROLL.CPP" />
+    <ClCompile Include="..\GIAN07\TAMA.CPP" />
+    <ClCompile Include="..\GIAN07\WindowCtrl.cpp" />
+    <ClCompile Include="..\GIAN07\WindowSys.cpp" />
+    <ClCompile Include="..\MAIN\MAIN.CPP" />
+    <ClCompile Include="..\patch\LZ_UTY.cpp" />
+    <ClCompile Include="..\patch\MtoB.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\DirectXUTYs\D2_Polygon.H" />
+    <ClInclude Include="..\DirectXUTYs\D3_TEX.H" />
+    <ClInclude Include="..\DirectXUTYs\DD_CLIP2D.H" />
+    <ClInclude Include="..\DirectXUTYs\DD_GRP2D.H" />
+    <ClInclude Include="..\DirectXUTYs\DD_GRP3D.H" />
+    <ClInclude Include="..\DirectXUTYs\DD_UTY.H" />
+    <ClInclude Include="..\DirectXUTYs\DI_UTY.H" />
+    <ClInclude Include="..\DirectXUTYs\DS_UTY.H" />
+    <ClInclude Include="..\DirectXUTYs\DX_ERROR.H" />
+    <ClInclude Include="..\DirectXUTYs\DX_TYPE.H" />
+    <ClInclude Include="..\DirectXUTYs\PBGMIDI.H" />
+    <ClInclude Include="..\DirectXUTYs\PBGUTY_X.H" />
+    <ClInclude Include="..\DirectXUTYs\UT_MATH.H" />
+    <ClInclude Include="..\GIAN07\BOMBEFC.H" />
+    <ClInclude Include="..\GIAN07\BOSS.H" />
+    <ClInclude Include="..\GIAN07\DEMOPLAY.H" />
+    <ClInclude Include="..\GIAN07\ECL.H" />
+    <ClInclude Include="..\GIAN07\ECL_LEN.H" />
+    <ClInclude Include="..\GIAN07\EFFECT.H" />
+    <ClInclude Include="..\GIAN07\EFFECT3D.H" />
+    <ClInclude Include="..\GIAN07\ENDING.H" />
+    <ClInclude Include="..\GIAN07\ENEMY.H" />
+    <ClInclude Include="..\GIAN07\EnemyExCtrl.h" />
+    <ClInclude Include="..\GIAN07\EXDEF.H" />
+    <ClInclude Include="..\GIAN07\FONTUTY.H" />
+    <ClInclude Include="..\GIAN07\FRAGMENT.H" />
+    <ClInclude Include="..\GIAN07\GAMEMAIN.H" />
+    <ClInclude Include="..\GIAN07\GIAN.H" />
+    <ClInclude Include="..\GIAN07\HOMINGL.H" />
+    <ClInclude Include="..\GIAN07\ITEM.H" />
+    <ClInclude Include="..\GIAN07\LASER.H" />
+    <ClInclude Include="..\GIAN07\LENS.H" />
+    <ClInclude Include="..\GIAN07\LLASER.H" />
+    <ClInclude Include="..\GIAN07\LOADER.H" />
+    <ClInclude Include="..\GIAN07\MAID.H" />
+    <ClInclude Include="..\GIAN07\MAIDTAMA.H" />
+    <ClInclude Include="..\GIAN07\PaletteEx.h" />
+    <ClInclude Include="..\GIAN07\PRankCtrl.h" />
+    <ClInclude Include="..\GIAN07\SCL.H" />
+    <ClInclude Include="..\GIAN07\SCORE.H" />
+    <ClInclude Include="..\GIAN07\SCROLL.H" />
+    <ClInclude Include="..\GIAN07\TAMA.H" />
+    <ClInclude Include="..\GIAN07\WindowCtrl.h" />
+    <ClInclude Include="..\GIAN07\WindowSys.h" />
+    <ClInclude Include="..\patch\LZ_UTY.h" />
+    <ClInclude Include="..\patch\MtoB.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

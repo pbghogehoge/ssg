@@ -5,7 +5,7 @@
 
 #include "BOSS.h"
 #include "EnemyExCtrl.h"
-#include "..\\DirectX_UTYs\\DD_GRP3D.h"
+#include "../DirectXUTYs/DD_GRP3D.H"
 
 
 // 公開グローバル //

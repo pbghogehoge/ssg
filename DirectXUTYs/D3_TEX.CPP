@@ -42,6 +42,7 @@ FBOOL TexInit(void)
 	return flag;
 }
 
+/*
 FBOOL TexCreateTexture(char *filename,DWORD txid)
 {
 	HRESULT				dxret;
@@ -115,6 +116,7 @@ FBOOL TexCreateTexture(char *filename,DWORD txid)
 
 	return TRUE;
 }
+*/
 
 FVOID TexReleaseTexture(DWORD txid)
 {

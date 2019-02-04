@@ -22,7 +22,7 @@ extern void ErrSetup(void)
 }
 
 // エラー文字列を追加 //
-extern void ErrInsert(char *s)
+extern void ErrInsert(const char *s)
 {
 	ERROR_DATA *temp;
 
@@ -63,7 +63,7 @@ extern void ErrCleanup(void)
 	ErrSetup();
 }
 
-extern void DebugSetup(char *filename)
+extern void DebugSetup(const char *filename)
 {
 	char buf[1000];
 	FILE *fp;
@@ -88,7 +88,7 @@ extern void DebugCleanup(void)
 	//ErrorFP=NULL;
 }
 
-extern void DebugOut(char *s)
+extern void DebugOut(const char *s)
 {
 	FILE *fp;
 	fp= fopen(ErrorOut,"a");

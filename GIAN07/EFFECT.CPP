@@ -165,7 +165,7 @@ FVOID SEffectInit(void)
 }
 
 // 文字列系エフェクト //
-FVOID StringEffect(int x,int y,char *s)
+FVOID StringEffect(int x,int y, const char *s)
 {
 	int		i,j,len;
 

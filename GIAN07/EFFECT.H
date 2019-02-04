@@ -94,7 +94,7 @@ typedef struct tagSCREENEFC_INFO{
 
 ///// [ 関数 ] /////
 FVOID SEffectInit(void);								// エフェクトの初期化を行う
-FVOID StringEffect(int x,int y,char *s);				// 文字列系エフェクト(上に表示する奴)
+FVOID StringEffect(int x,int y, const char *s);				// 文字列系エフェクト(上に表示する奴)
 FVOID StringEffect2(int x,int y,DWORD point);			// 得点表示エフェクト
 FVOID StringEffect3(void);								// ゲームオーバーの表示
 FVOID SetMusicTitle(int y,char *s);						// 曲名の表示

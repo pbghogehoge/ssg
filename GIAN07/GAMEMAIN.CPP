@@ -89,7 +89,7 @@ extern FBOOL ScoreNameInit(void)
 // スコアネームの表示 //
 FVOID ScoreNameProc(void)
 {
-	static char *ExString[5] = {"Easy","Normal","Hard","Lunatic","Extra"};
+	static const char *ExString[5] = {"Easy","Normal","Hard","Lunatic","Extra"};
 
 	Key_Read();
 

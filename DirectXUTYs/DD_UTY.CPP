@@ -579,8 +579,10 @@ static FVOID GrpFlipFS(void)
 	HRESULT		ddrval;
 
 	// キャプチャーフラグが有効かつ、キャプチャー要求が出ていれば画像を取り込む //
-	if(CaptureFlag && (GetAsyncKeyState(VK_SNAPSHOT)&0x8000))
-		PutSurfaceToBmp(DxObj.Back);
+	if (CaptureFlag && (GetAsyncKeyState(VK_SNAPSHOT) & 0x8000))
+		// TODO
+		//PutSurfaceToBmp(DxObj.Back);
+		;
 
 	// パレットを変更する必要があれば、変更だ //
 	if(DxObj.bNeedChgPal && DxObj.Bpp==8){
@@ -608,8 +610,10 @@ static FVOID GrpFlipWnd(void)
 	HRESULT		ddrval;
 
 	// キャプチャーフラグが有効かつ、キャプチャー要求が出ていれば画像を取り込む //
-	if(CaptureFlag && (GetAsyncKeyState(VK_SNAPSHOT)&0x8000))
-		PutSurfaceToBmp(DxObj.Back);
+	if (CaptureFlag && (GetAsyncKeyState(VK_SNAPSHOT) & 0x8000))
+		// TODO
+		//PutSurfaceToBmp(DxObj.Back);
+		;
 
 	for(;;){
 		ddrval = DxObj.Prim->Blt(NULL,DxObj.Back,NULL,0,NULL);

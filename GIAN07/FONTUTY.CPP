@@ -11,7 +11,7 @@ void __FillExpoint(EXPOINT *p, int x, int y, int w, int h);
 
 
 // 16x16 透過フォントで文字列出力(高速) //
-extern FVOID GrpPut16(int x,int y,char *s)
+extern FVOID GrpPut16(int x,int y,const char *s)
 {
 	RECT	src;
 	int		sx,tx,ty;

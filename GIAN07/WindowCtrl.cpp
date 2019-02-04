@@ -103,7 +103,7 @@ WINDOW_INFO SndItem[4] = {
 };
 
 char IKeyTitle[4][20];
-char InpHelp[34] = "パッド上のボタンを押すと変更";
+char InpHelp[] = "パッド上のボタンを押すと変更";
 WINDOW_INFO InpKey[5] = {
 	{IKeyTitle[0],InpHelp, InpFnKeyTama,0,0},
 	{IKeyTitle[1],InpHelp, InpFnKeyBomb,0,0},
@@ -944,7 +944,7 @@ static BOOL CfgRepSave(WORD key)
 
 static void SetCfgRepItem(void)
 {
-	char *SWItem[2]  = {"[ O N ]","[O F F]"};
+	const char *SWItem[2]  = {"[ O N ]","[O F F]"};
 
 	if(0 == ConfigDat.StageSelect){
 		sprintf(CfgRepTitle[0], "ReplaySave  %s", SWItem[1]);
@@ -959,8 +959,8 @@ static void SetCfgRepItem(void)
 
 static void SetDifItem(void)
 {
-	char *DifItem[4] = {" Easy  "," Normal"," Hard  ","Lunatic"};
-	char *SWItem[2]  = {"[ O N ]","[O F F]"};
+	const char *DifItem[4] = {" Easy  "," Normal"," Hard  ","Lunatic"};
+	const char *SWItem[2]  = {"[ O N ]","[O F F]"};
 /*
 	{DifTitle[4],"[DebugMode] 画面に情報を表示するか"	,DifFnMsgDisplay,0,0},
 	{DifTitle[5],"[DebugMode] ステージセレクト"			,DifFnStgSelect,0,0},
@@ -980,8 +980,8 @@ static void SetDifItem(void)
 
 static void SetGrpItem(void)
 {
-	char	*UorD[3]  = {"上のほう","下のほう","描画せず"};
-	char	*DMode[4] = {"おまけ","60Fps","30Fps","20Fps"};
+	const char	*UorD[3]  = {"上のほう","下のほう","描画せず"};
+	const char	*DMode[4] = {"おまけ","60Fps","30Fps","20Fps"};
 	int		i;
 
 #define SetFlagsMacro(src,flag)		((flag) ? src[0] : src[1])
@@ -1000,7 +1000,7 @@ static void SetGrpItem(void)
 
 static void SetSndItem(void)
 {
-	char	*EorD[2] = {" 使用する ","使用しない"};
+	const char	*EorD[2] = {" 使用する ","使用しない"};
 	static int now;
 	char	*ptr,buf[1000];
 	int		l;
